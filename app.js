@@ -39,7 +39,7 @@ const app = Vue.createApp({
         this.monsterHealth -= attackValue;
         this.currentRound = 0;
         this.attackPlayer();
-        this.showLog('player', 'attack', attackValue)
+        this.showLog('player', 'spAttack', attackValue)
       }
     },
     healPlayer() {

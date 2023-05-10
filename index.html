@@ -54,11 +54,15 @@
             >
             <span v-if="msg.actionType==='heal'">
               heals himself for
-              <span class="log--heal">{{msg.actionValue}}</span></span
+              <span class="log--heal">{{msg.actionValue}}</span> health</span
+            >
+            <span v-else-if="msg.actionType==='spAttack'">
+              uses special attack and deals
+              <span class="log--damage">{{msg.actionValue}}</span> damage</span
             >
             <span v-else>
               attacks and deals
-              <span class="log--damage">{{msg.actionValue}}</span></span
+              <span class="log--damage">{{msg.actionValue}}</span> damage</span
             >
           </li>
         </ul>
