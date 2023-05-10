@@ -29,6 +29,7 @@
           <div class="healthbar__value" :style="healthbarPlayer"></div>
         </div>
       </section>
+
       <section class="container" v-if="winner">
         <h2>Game Over</h2>
         <h3 v-if="winner==='player'">You Won!!</h3>
@@ -44,6 +45,7 @@
         <button @click="healPlayer">HEAL</button>
         <button @click="surrender">SURRENDER</button>
       </section>
+
       <section id="log" class="container">
         <h2>Battle Log</h2>
         <ul>
